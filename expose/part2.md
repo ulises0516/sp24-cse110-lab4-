@@ -35,5 +35,6 @@
     F. True
 
 15. They compare values differently, where `==` performs type conversions(if needed) on the values being compared. Where `===` compares values of the two things being compared without doing type conversions, known as strict equality checker.
+17. The result would be the array passed in [1,2,3] each element would be doubled so the new array after the function call would be [2.4,6]. I came to this conclusion since I know that a callback function is a function that can be passed to another function as a parameter. I followed what modifyArray was doing and noticed that it traverses each element and "callsback" doSomething since that was the function passed orginally and doSomething just multiplied the element by 2. This continue until the end of the array.
 
 
