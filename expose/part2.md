@@ -11,3 +11,29 @@
 9. Line 11 will cause a reference error because i is declared with let which means its a code block scope and the scope of i in this case is the for loop. Since line 11 tries to print i and its outside of this scope it will produce a reference error.
 10. Line 12 will print 3 because length holds the length of the array which is prices that contains 3 element hence printing 3.
 11. line 16 will return an array of the discountedPrices which in this case was 50 percent. Essentially each element of the original array ("prices") will have a 50 percent discount applied to each element. So the array returned will contain [50,100,150]. This happens because the variables that were changed from var to let did not change overall funciton of the discountPrices(prices, discount). It will still function as when the variables were declared with var because changing i to let does not affect the operations in the body still working as its should. FinalPrice still functions correctly holding the discounted price of the original price then pushed to a new array. Delcaring the array as a const does not do anything because we are pushing new elements to the array not altering the elements inside it. Inside the for loop we just calcualte the discounted price and then push it to the new array to return - discountedPrices. Now the array will contained all of the discounted Prices and will be returned.
+12.  
+    A. student.name
+    B. student['Grad Year']
+    C. student.greeting()
+    D. student['Favorite Teacher'].name
+    E. student.courseLoad[0]
+13. 
+    A. 32
+    B. 1
+    C. 3
+    D. 3null
+    E. 4
+    F. 0
+    E. Eundefined
+    G. NaN
+14. 
+    A. True
+    B. False
+    C. True
+    D. False
+    E. False
+    F. True
+
+15. They compare values differently, where `==` performs type conversions(if needed) on the values being compared. Where `===` compares values of the two things being compared without doing type conversions, known as strict equality checker.
+
+
